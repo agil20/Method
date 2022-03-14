@@ -12,21 +12,21 @@ namespace task4
 
             //Üçbucaqlının daxilinə çəkilmiş çevrənin sahəsi - S = p * r; p = (a + b + c) / 2
 
-            int circlearea = CircleArea(3);
-            int rectonArea = RectanArea(3, 4);
-            int reccirle = RecCircle(2, 3, 4, 4);
+            int circlearea = Circle(3);
+            int rectonArea = Circle(3, 4);
+            int reccirle = Circle(2, 3, 4, 4);
 
 
 
-        } static int CircleArea(int r,int p = 3) //perimetrin qiymetini verirem cunku basa cevrelerdde islede bilek
+        } static int Circle(int r)
         { int s;
-            return s = (r * r) * p;
+            return s = (r * r) * 3;
         }
-        static int RectanArea(int a,int b)
+        static int Circle(int a,int b)
         {
             return a * b;
         }
-        static int RecCircle(int a,int b,int c,int r)
+        static int Circle(int a,int b,int c,int r)
         {
             int p = (a + b + c) / 2;
             int S = p * r;
